@@ -8,4 +8,29 @@
   <table class="linktable">
    <tr><th>e\q</th><th>2</th><th>3</th><th>4</th><th>5</th><th>7</th><th>8</th><th>9</th><th>16</th><th>25</th><th>27</th><th>32</th></tr><tr><th>2</th><td><a href="tree_2_2.html">*</a></td><td><a href="tree_3_2.html">*</a></td><td><a href="tree_4_2.html">*</a></td><td><a href="tree_5_2.html">*</a></td><td><a href="tree_7_2.html">*</a></td><td><a href="tree_8_2.html">*</a></td><td><a href="tree_9_2.html">*</a></td><td><a href="tree_16_2.html">*</a></td><td><a href="tree_25_2.html">*</a></td><td><a href="tree_27_2.html">*</a></td><td><a href="tree_32_2.html">*</a></td></tr><tr><th>3</th><td><a href="tree_2_3.html">*</a></td><td><a href="tree_3_3.html">*</a></td><td><a href="tree_4_3.html">*</a></td><td><a href="tree_5_3.html">*</a></td><td><a href="tree_7_3.html">*</a></td><td><a href="tree_8_3.html">*</a></td><td><a href="tree_9_3.html">*</a></td><td><a href="tree_16_3.html">*</a></td><td><a href="tree_25_3.html">*</a></td><td><a href="tree_27_3.html">*</a></td><td><a href="tree_32_3.html">*</a></td></tr><tr><th>4</th><td><a href="tree_2_4.html">*</a></td><td><a href="tree_3_4.html">*</a></td><td><a href="tree_4_4.html">*</a></td><td><a href="tree_5_4.html">*</a></td><td><a href="tree_7_4.html">*</a></td><td></td><td><a href="tree_9_4.html">*</a></td><td></td><td><a href="tree_25_4.html">*</a></td><td><a href="tree_27_4.html">*</a></td><td></td></tr><tr><th>5</th><td><a href="tree_2_5.html">*</a></td><td><a href="tree_3_5.html">*</a></td><td><a href="tree_4_5.html">*</a></td><td><a href="tree_5_5.html">*</a></td><td><a href="tree_7_5.html">*</a></td><td></td><td><a href="tree_9_5.html">*</a></td><td></td><td><a href="tree_25_5.html">*</a></td><td><a href="tree_27_5.html">*</a></td><td></td></tr><tr><th>6</th><td><a href="tree_2_6.html">*</a></td><td><a href="tree_3_6.html">*</a></td><td><a href="tree_4_6.html">*</a></td><td><a href="tree_5_6.html">*</a></td><td><a href="tree_7_6.html">*</a></td><td></td><td><a href="tree_9_6.html">*</a></td><td></td><td><a href="tree_25_6.html">*</a></td><td></td><td></td></tr><tr><th>7</th><td><a href="tree_2_7.html">*</a></td><td><a href="tree_3_7.html">*</a></td><td><a href="tree_4_7.html">*</a></td><td><a href="tree_5_7.html">*</a></td><td><a href="tree_7_7.html">*</a></td><td></td><td><a href="tree_9_7.html">*</a></td><td></td><td><a href="tree_25_7.html">*</a></td><td></td><td></td></tr><tr><th>8</th><td></td><td><a href="tree_3_8.html">*</a></td><td></td><td><a href="tree_5_8.html">*</a></td><td><a href="tree_7_8.html">*</a></td><td></td><td><a href="tree_9_8.html">*</a></td><td></td><td><a href="tree_25_8.html">*</a></td><td></td><td></td></tr><tr><th>9</th><td></td><td></td><td></td><td><a href="tree_5_9.html">*</a></td><td><a href="tree_7_9.html">*</a></td><td></td><td></td><td></td><td><a href="tree_25_9.html">*</a></td><td></td><td></td></tr><tr><th>10</th><td></td><td></td><td></td><td><a href="tree_5_10.html">*</a></td><td><a href="tree_7_10.html">*</a></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
   </table>
+  <div class="description">
+    <script>
+window.MathJax = {
+  tex: {
+    macros: {
+      fm: "\\mathfrak{m}",
+      F: "\\mathbb{F}",
+      calO: "\\mathcal{O}",
+    }
+  }
+};
+</script>
+<p>
+A finite chain ring is a finite commutative ring whose ideals are totally ordered by inclusion. It is easy to see that such a ring is local, all ideals are powers of the maximal ideal \(\fm\), and all \(\fm^k/\fm^{k+1}\) are \(1\)-dimensional.
+The two most basic invariants of a chain ring \(R\) is the order \(q=p^f\) of its residue field \(R/\fm\), and its length: The smallest \(n\) with \(\fm^n=0\). If \(p=0\) in \(R\), they already characterize \(R\cong \F_q[z]/z^n\), otherwise there is a further invariant, the ramification index \(e\), characterized by \((p)=\fm^e\), and \(R\) is isomorphic to \(\calO_K/\fm^n\) for some \(p\)-adic number field \(K\) of residue field degree \(f\) and ramification index \(e\), of which there are finitely many isomorphism classes. This description is not unique: For large \(n\), an isomorphism between \(\calO_K/\fm^n\) and \(\calO_{K'}/\fm^n\) lifts to an isomorphism \(K\cong K'\), but for small \(n\) they collapse into fewer automorphism classes.
+</p>
+<p>
+Using deformation theory, one can inductively compute representatives for all isomorphism types of finite chain rings for given \(q\) and \(e\). This approach also shows that the groupoid cardinality (where we count each isomorphism class with <q>mass</q> \(1/|\mathrm{Aut}|\)) of a chain ring of length \(n\) and all its deformations of length \(n+1\) agree, which gives a nice proof of Serre's mass formula for \(p\)-adic number fields. We also obtain a way to canonically label isomorphism types of finite chain rings, by a sequence of turns to take in the resulting tree.
+</p>
+<p>
+Above, visualisations of these trees are linked for different \(q\) and \(e\). The root on the left corresponds to \(\F_q[z]/z^e\), nodes are labelled by their <q>mass</q> \(1/|\mathrm{Aut}|\), \(n\) increases from left to right, and the tree is truncated at branches which from then on deform to a unique \(\calO_K\), which we indicate by a link to the corresponding entry in the <a href="https://www.lmfdb.org/">LMFDB</a>.
+</p>
+
+
+  </div>
 </body>

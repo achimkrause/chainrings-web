@@ -1,3 +1,4 @@
+
 window.MathJax = {
   startup: {
     ready: () => {
